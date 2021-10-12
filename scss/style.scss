@@ -6,6 +6,7 @@ $color-1: #1C1814;
 $color-1m: #14110E;
 $color-2: #ffffff;
 $color-3: #C99E71;
+$color-3h: #ab7b49;
 $color-4: #CECECE;
 
 //  =================
@@ -53,7 +54,8 @@ $color-4: #CECECE;
 body {
    font-family: 'Inter', sans-serif;
    font-family: 'Righteous', cursive;
-   font-family: 'Urbanist', sans-serif;   
+   font-family: 'Urbanist', sans-serif; 
+   background: $color-1m;  
 }
 
 *{
@@ -387,6 +389,97 @@ body {
 
 /* ========= create / ========= */
 
+/* ========= popular ========= */
+.popular {
+   text-align: center;
+   padding-bottom: 140px;
+}
+
+.popular-block {
+   display: flex;
+   gap: 36px;
+   flex-wrap: wrap;
+   justify-content: center;
+
+   &__item  {
+      width: 366px;
+      padding: 48px;
+      > img {
+         margin-bottom: 37px;
+      }
+      h5 {
+         font-family: 'Urbanist';
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 22 / 18 * 100%;
+         text-transform: uppercase;
+         color: $color-2;
+         margin-top: 20px;
+         span {
+            color: $color-3;
+         }
+      } 
+   }
+}
+.popular-btn {
+   display: inline-flex;
+   font-family: 'Urbanist';
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22 / 18 * 100%;
+   padding: 13px 20px;
+   background: $color-3;
+   color: $color-2;
+   margin-top: 35px;
+   transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+
+   &:hover {
+      background: $color-3h;
+      color: $color-2
+   }
+   span {
+      margin-left: 20px;
+   }
+}
+.popular__icon {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 22px;
+}
+.popular__icon-text {
+   font-family: 'Urbanist';
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19 / 16 * 100%;
+   text-transform: uppercase;
+   color: $color-3;
+   margin-right: 15px;
+}
+.popular__icon-img {
+   display: flex;
+}
+.popular-btn2 {
+   display: inline-block;
+   font-family: 'Inter';
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 22 / 18 * 100%;
+   text-transform: uppercase;
+   color: $color-2;
+   background: $color-3;
+   padding: 20px 35px;
+   margin-top: 55px;
+   &:hover {
+      background: $color-3h;
+      color: $color-2
+   }
+}
+/* ========= popular / ========= */
+
 
 
 
@@ -480,14 +573,26 @@ body {
 @media (max-width: 575px) {
    .fon-top__block h1 {
      font-size: 12vw;
-  }
+   }
   .create-block {
    gap: 26px;
+   margin-bottom: 55px;
    }
    .title-h2 {
       font-size: 8vw;
-  }
+   }
+   .popular-block__item {
+      width: 100%;
+      padding: 20px 0;
+      > img {
+         margin: 0 auto 27px;
+      }
+   }
+   .popular__icon {
+      margin-bottom: 11px;
+   }
 }
+
  /* =====  Медиа 450px ====== */
 @media (max-width: 450px) {
    .create-block__item-3 {

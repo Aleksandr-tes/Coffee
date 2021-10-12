@@ -44,6 +44,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-family: 'Righteous', cursive;
   font-family: 'Urbanist', sans-serif;
+  background: #14110E;
 }
 
 * {
@@ -363,6 +364,100 @@ a:hover {
 }
 
 /* ========= create / ========= */
+/* ========= popular ========= */
+.popular {
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.popular-block {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popular-block__item {
+  width: 366px;
+  padding: 48px;
+}
+.popular-block__item > img {
+  margin-bottom: 37px;
+}
+.popular-block__item h5 {
+  font-family: 'Urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.popular-block__item h5 span {
+  color: #C99E71;
+}
+
+.popular-btn {
+  display: inline-flex;
+  font-family: 'Urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  padding: 13px 20px;
+  background: #C99E71;
+  color: #ffffff;
+  margin-top: 35px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.popular-btn:hover {
+  background: #ab7b49;
+  color: #ffffff;
+}
+.popular-btn span {
+  margin-left: 20px;
+}
+
+.popular__icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.popular__icon-text {
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 118.75%;
+  text-transform: uppercase;
+  color: #C99E71;
+  margin-right: 15px;
+}
+
+.popular__icon-img {
+  display: flex;
+}
+
+.popular-btn2 {
+  display: inline-block;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #C99E71;
+  padding: 20px 35px;
+  margin-top: 55px;
+}
+.popular-btn2:hover {
+  background: #ab7b49;
+  color: #ffffff;
+}
+
+/* ========= popular / ========= */
 @media (max-width: 1200px) {
   .create-block__item {
     max-width: 100%;
@@ -466,10 +561,23 @@ a:hover {
 
   .create-block {
     gap: 26px;
+    margin-bottom: 55px;
   }
 
   .title-h2 {
     font-size: 8vw;
+  }
+
+  .popular-block__item {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .popular-block__item > img {
+    margin: 0 auto 27px;
+  }
+
+  .popular__icon {
+    margin-bottom: 11px;
   }
 }
 /* =====  Медиа 450px ====== */
