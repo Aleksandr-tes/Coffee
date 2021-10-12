@@ -4,6 +4,7 @@
 // ===== Переменные =====
 $color-1: #1C1814;
 $color-1m: #14110E;
+$color-1b: #32323D;
 $color-2: #ffffff;
 $color-3: #C99E71;
 $color-3h: #ab7b49;
@@ -11,13 +12,14 @@ $color-4: #CECECE;
 
 //  =================
 
-.title-h4 {
-   font-family: 'Urbanist';
-   font-weight: 600;
-   font-size: 18px;
-   line-height: 22px;
-   color: $color-3;
-   margin-bottom: 12px;
+.title-h2 {
+   font-family: 'Righteous';
+   font-style: normal;
+   font-weight: normal;
+   font-size: 48px;
+   line-height: 130%;
+   color: $color-2;
+   margin-bottom: 35px;
 }
  
 .best-h3 {
@@ -32,15 +34,16 @@ $color-4: #CECECE;
    }
 }
 
-.title-h2 {
-   font-family: 'Righteous';
-   font-style: normal;
-   font-weight: normal;
-   font-size: 48px;
-   line-height: 130%;
-   color: $color-2;
-   margin-bottom: 35px;
+.title-h4 {
+   font-family: 'Urbanist';
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: $color-3;
+   margin-bottom: 12px;
 }
+
+
 .title-p {
    font-family: 'Urbanist';
    font-weight: 500;
@@ -49,6 +52,28 @@ $color-4: #CECECE;
    text-transform: capitalize;
    color: $color-4;
 }
+.knopka{
+   display: inline-block;
+   font-family: 'Inter';
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 22 / 18 * 100%;
+   text-transform: uppercase;
+   color: $color-2;
+   background: $color-3;
+   padding: 20px 35px;
+   margin-top: 55px;
+   transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   &:hover {
+      background: $color-3h;
+      color: $color-2
+   }
+}
+/*=============================*/
 
 
 body {
@@ -487,10 +512,87 @@ body {
 }
 /* ========= popular / ========= */
 
+/* ========= machine ========= */
+.machine {
+   padding-bottom: 140px;
+}
+.machine-block {
+   display: flex;
+   padding: 85px 20px;
+   background: $color-1;
+
+   &__item {
+      flex: 0 0 50%;
+      img {
+         margin: 0 auto;
+      }
+   }
+}
+
+/* ========= machine / ========= */
+
+/* ========= coffee ========= */
+.coffee {
+   text-align: center;
+   padding-bottom: 140px;
+}
+.coffee-block {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 36px 40px;
+   a {
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+   }
+   a:hover {
+      transform: scale(1.03);
+      -webkit-transform: scale(1.031);
+      -moz-transform: scale(1.031);
+      -ms-transform: scale(1.031);
+      -o-transform: scale(1.031);
+}
+   &__item {
+      display: flex;
+      align-items: center;
+      padding: 24px;
+      width: 565px;
+      min-height: 120px;
+      border: 1px solid $color-1b;
+      box-sizing: border-box;
+   }
+}
+.coffee__img {
+   margin-right: 20px;
+   background: transparent;
+   img {
+      display: flex;
+      align-items: center;
+   }
+}
+.coffee__price {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   span {
+      font-family: 'Urbanist';
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: $color-3;
+   }
+}
+
+
+/* ========= coffee / ========= */
 
 
 
 
+/* =======  Медиа 1200px ======= */
 
 @media (max-width: 1200px) {
    .create-block__item {
@@ -512,6 +614,10 @@ body {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
    }
+   .machine-block {
+      flex-direction: column;
+      padding: 85px 20px;
+   } 
 }
 
 
@@ -576,10 +682,13 @@ body {
 
 }
 
- /* =====  Медиа 575px ====== */
+/* =====  Медиа 575px ====== */
 @media (max-width: 575px) {
    .fon-top__block h1 {
      font-size: 12vw;
+   }
+   .create {
+      padding-bottom: 25px;
    }
   .create-block {
    gap: 26px;
@@ -595,8 +704,43 @@ body {
          margin: 0 auto 27px;
       }
    }
+   .popular {
+      padding-bottom: 75px;
+   }
    .popular__icon {
       margin-bottom: 11px;
+   }
+   .machine {
+      padding-bottom: 75px;
+   }
+   .machine-block {
+      padding: 35px 20px;
+   }
+   .coffee {
+      padding-bottom: 75px;
+   }
+   .coffee-block {
+      gap: 15px 0px;
+   }
+   .coffee-block a {
+      width: 100%;
+   }
+   .coffee-block__item {
+      flex-direction: column;
+      justify-content: center;
+      padding: 12px;
+      width: 100%;
+   }
+   
+   .coffee__price {
+      flex-direction: column;
+   }
+   .coffee__img {
+      margin: 0 0 8px;
+      display: none;
+   }
+   .coffee__price span {
+      margin-top: 8px;
    }
 }
 

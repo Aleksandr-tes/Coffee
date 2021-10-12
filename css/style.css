@@ -1,12 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@500;600&display=swap");
-.title-h4 {
-  font-family: 'Urbanist';
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #C99E71;
-  margin-bottom: 12px;
+.title-h2 {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 35px;
 }
 
 .best-h3 {
@@ -21,14 +22,13 @@
   color: #C99E71;
 }
 
-.title-h2 {
-  font-family: 'Righteous';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 130%;
-  color: #ffffff;
-  margin-bottom: 35px;
+.title-h4 {
+  font-family: 'Urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #C99E71;
+  margin-bottom: 12px;
 }
 
 .title-p {
@@ -40,6 +40,29 @@
   color: #CECECE;
 }
 
+.knopka {
+  display: inline-block;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #C99E71;
+  padding: 20px 35px;
+  margin-top: 55px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.knopka:hover {
+  background: #ab7b49;
+  color: #ffffff;
+}
+
+/*=============================*/
 body {
   font-family: 'Inter', sans-serif;
   font-family: 'Righteous', cursive;
@@ -465,6 +488,84 @@ a:hover {
 }
 
 /* ========= popular / ========= */
+/* ========= machine ========= */
+.machine {
+  padding-bottom: 140px;
+}
+
+.machine-block {
+  display: flex;
+  padding: 85px 20px;
+  background: #1C1814;
+}
+.machine-block__item {
+  flex: 0 0 50%;
+}
+.machine-block__item img {
+  margin: 0 auto;
+}
+
+/* ========= machine / ========= */
+/* ========= coffee ========= */
+.coffee {
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.coffee-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px 40px;
+}
+.coffee-block a {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.coffee-block a:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.031);
+  -moz-transform: scale(1.031);
+  -ms-transform: scale(1.031);
+  -o-transform: scale(1.031);
+}
+.coffee-block__item {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  width: 565px;
+  min-height: 120px;
+  border: 1px solid #32323D;
+  box-sizing: border-box;
+}
+
+.coffee__img {
+  margin-right: 20px;
+  background: transparent;
+}
+.coffee__img img {
+  display: flex;
+  align-items: center;
+}
+
+.coffee__price {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.coffee__price span {
+  font-family: 'Urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #C99E71;
+}
+
+/* ========= coffee / ========= */
+/* =======  Медиа 1200px ======= */
 @media (max-width: 1200px) {
   .create-block__item {
     max-width: 100%;
@@ -488,6 +589,11 @@ a:hover {
   .create-block__item-4 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+  }
+
+  .machine-block {
+    flex-direction: column;
+    padding: 85px 20px;
   }
 }
 @media (max-width: 992px) {
@@ -566,6 +672,10 @@ a:hover {
     font-size: 12vw;
   }
 
+  .create {
+    padding-bottom: 25px;
+  }
+
   .create-block {
     gap: 26px;
     margin-bottom: 55px;
@@ -583,8 +693,52 @@ a:hover {
     margin: 0 auto 27px;
   }
 
+  .popular {
+    padding-bottom: 75px;
+  }
+
   .popular__icon {
     margin-bottom: 11px;
+  }
+
+  .machine {
+    padding-bottom: 75px;
+  }
+
+  .machine-block {
+    padding: 35px 20px;
+  }
+
+  .coffee {
+    padding-bottom: 75px;
+  }
+
+  .coffee-block {
+    gap: 15px 0px;
+  }
+
+  .coffee-block a {
+    width: 100%;
+  }
+
+  .coffee-block__item {
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .coffee__price {
+    flex-direction: column;
+  }
+
+  .coffee__img {
+    margin: 0 0 8px;
+    display: none;
+  }
+
+  .coffee__price span {
+    margin-top: 8px;
   }
 }
 /* =====  Медиа 450px ====== */
