@@ -270,7 +270,7 @@ a:hover {
   font-size: 18px;
   line-height: 122.2222222222%;
   text-transform: uppercase;
-  color: #CECECE;
+  color: #ffffff;
   padding: 24px 40px;
   background: #C99E71;
   transition: all 0.5s;
@@ -280,7 +280,8 @@ a:hover {
   -o-transition: all 0.5s;
 }
 .fon-top__btn:hover {
-  background: #ffffff;
+  background: #ab7b49;
+  color: #ffffff;
 }
 
 .fon-top__btn2 img {
@@ -398,6 +399,7 @@ a:hover {
 
 .popular-btn {
   display: inline-flex;
+  align-items: center;
   font-family: 'Urbanist';
   font-weight: 600;
   font-size: 18px;
@@ -451,6 +453,11 @@ a:hover {
   background: #C99E71;
   padding: 20px 35px;
   margin-top: 55px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .popular-btn2:hover {
   background: #ab7b49;
