@@ -9,6 +9,7 @@ $color-2: #ffffff;
 $color-3: #C99E71;
 $color-3h: #ab7b49;
 $color-4: #CECECE;
+$color-5: #777472;
 
 //  =================
 
@@ -587,7 +588,126 @@ body {
 }
 
 
+
 /* ========= coffee / ========= */
+
+/* ========= slyder ========= */
+
+.slyder {
+   text-align: center;
+   padding-bottom: 140px;
+}
+.slyder-block__item {
+   width: 565px;
+   min-height: 297px;
+   background: $color-1;
+   margin: 0 15px;
+   padding: 35px;
+   h3 {
+      text-align: left;
+      color: $color-2;
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+      margin: 28px 0 4px;
+   }
+}
+.slyder-wrap {
+   display: flex;
+}
+.slyder__image {
+   min-width: 129px;
+   margin-right: 24px;
+}
+.slyder-text {
+   text-align: left;
+}
+.slyder__bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   span {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 180%;
+      text-transform: capitalize;
+      color: $color-5;
+   }
+}
+.slyder__bottom-image {
+   display: flex;
+   img {
+      margin: 0 2px;
+   }
+}
+// %%%%%%%%%%%%
+.slick-prev:before, .slick-next:before {
+   font-size: 28px;
+   line-height: 1;
+   opacity: .75;
+}
+
+.slick-prev {
+    left: -25px;
+}
+.slick-prev, .slick-next {
+    width: 56px;
+    height: 56px;
+    top: auto;
+    bottom: -125px;
+    padding: 0;
+    background: $color-3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: $color-1m;
+}
+.slick-prev {
+   left: auto;
+   right: 92px;
+}
+.slick-next {
+   right: 20px;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+   color: #14110e;
+   outline: none;
+   background: $color-3h;
+}
+.slick-dots {
+   position: absolute;
+   bottom: -80px;
+   left: 15px;
+   text-align: left;
+   width: 200px;
+}
+.slick-dots li button:before {
+   font-family: 'slick';
+   font-size: 32px;
+   line-height: 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 20px;
+   height: 20px;
+   content: '•';
+   text-align: center;
+   opacity: .5;
+   color: $color-3h;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+   opacity: 1;
+   color: $color-3;
+}
+/* ========= slyder/ ========= */
 
 
 
@@ -741,6 +861,22 @@ body {
    }
    .coffee__price span {
       margin-top: 8px;
+   }
+   .slyder-wrap {
+      flex-direction: column;
+   }
+   .slick-slide img  {
+      margin: 0 auto 15px;
+   }
+   .slyder-block__item {
+      width: 565px;
+      min-height: 297px;
+      background: #1C1814;
+      margin: 0 2px;
+      padding: 20px;
+   }
+   .slyder__bottom-image img {
+      margin: 0 2px;
    }
 }
 
