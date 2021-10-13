@@ -695,6 +695,81 @@ a:hover {
 }
 
 /* ========= slyder/ ========= */
+/* ========= booking ========= */
+.booking {
+  padding-bottom: 140px;
+  text-align: center;
+}
+
+.booking-block {
+  display: flex;
+}
+
+.booking-block__item {
+  max-width: 585px;
+  height: 652px;
+  flex: 1 1 50%;
+}
+
+.booking-block__item-1 {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.booking-block__item-1:hover {
+  opacity: 1;
+}
+
+.maps {
+  width: 100%;
+  height: 100%;
+}
+
+.booking-block__item-2 {
+  padding: 72px 48px;
+  background: #1C1814;
+}
+
+.form-booking input {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  margin-top: 24px;
+  background: #14110E;
+  padding: 0 24px;
+  align-items: center;
+  color: #777472;
+  border: none;
+}
+
+.form-booking input:focus {
+  border: 1px solid #ab7b49;
+  outline: none !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.booking-btn {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #C99E71;
+  padding: 20px 36px;
+  border: none;
+  margin-top: 56px;
+}
+
+/* ========= booking / ========= */
 /* =======  Медиа 1200px ======= */
 @media (max-width: 1200px) {
   .create-block__item {
@@ -795,6 +870,16 @@ a:hover {
   .best-block {
     gap: 50px;
   }
+
+  .booking-block {
+    flex-direction: column-reverse;
+  }
+
+  .booking-block__item {
+    max-width: 100%;
+    height: 652px;
+    flex: auto;
+  }
 }
 /* =====  Медиа 575px ====== */
 @media (max-width: 575px) {
@@ -875,6 +960,10 @@ a:hover {
     flex-direction: column;
   }
 
+  .slyder__image {
+    margin: 0;
+  }
+
   .slick-slide img {
     margin: 0 auto 15px;
   }
@@ -882,13 +971,17 @@ a:hover {
   .slyder-block__item {
     width: 565px;
     min-height: 297px;
-    background: #1C1814;
     margin: 0 2px;
     padding: 20px;
   }
 
   .slyder__bottom-image img {
     margin: 0 2px;
+  }
+
+  .booking-block__item-2 {
+    padding: 30px 20px;
+    height: 580px;
   }
 }
 /* =====  Медиа 450px ====== */
@@ -926,6 +1019,21 @@ a:hover {
   .create-block__item-4 {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+  }
+
+  .booking-btn {
+    font-size: 15px;
+    padding: 18px 25px;
+    margin-top: 40px;
+  }
+
+  .form-booking input {
+    margin-top: 15px;
+  }
+
+  .booking-block__item-2 {
+    padding: 20px 15px;
+    height: 500px;
   }
 }
 /* =====  Медиа 375px ====== */
