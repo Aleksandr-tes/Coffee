@@ -767,9 +767,81 @@ a:hover {
   padding: 20px 36px;
   border: none;
   margin-top: 56px;
+  cursor: pointer;
+}
+.booking-btn:hover {
+  background: #ab7b49;
 }
 
 /* ========= booking / ========= */
+/* ========= news ========= */
+.news {
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.news-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.news-block__item {
+  background: #1C1814;
+  width: 366px;
+  min-height: 500px;
+  text-align: left;
+}
+
+.news__wrap {
+  padding: 20px 24px 28px;
+}
+.news__wrap h3 {
+  color: #ffffff;
+  margin: 16px 0 33px;
+  font-family: 'Righteous';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+
+.news__wrap-text {
+  display: flex;
+  justify-content: space-between;
+}
+.news__wrap-text p {
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.news__wrap-text p span {
+  color: #C99E71;
+}
+
+.news__link {
+  display: flex;
+  align-items: center;
+}
+.news__link:hover span {
+  color: #ab7b49;
+}
+.news__link span {
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C99E71;
+  margin-right: 8px;
+}
+
+/* ========= news / ========= */
+/* =======  Медиа  ======= */
+/* =======  Медиа  ======= */
+/* =======  Медиа  ======= */
 /* =======  Медиа 1200px ======= */
 @media (max-width: 1200px) {
   .create-block__item {
@@ -979,9 +1051,17 @@ a:hover {
     margin: 0 2px;
   }
 
+  .booking {
+    padding-bottom: 75px;
+  }
+
   .booking-block__item-2 {
     padding: 30px 20px;
     height: 580px;
+  }
+
+  .news {
+    padding-bottom: 75px;
   }
 }
 /* =====  Медиа 450px ====== */
@@ -1041,5 +1121,9 @@ a:hover {
   .fon-top__block p {
     font-size: 5vw;
     margin: 34px 0 64px;
+  }
+
+  .news__wrap {
+    padding: 20px 15px 15px;
   }
 }
