@@ -1209,6 +1209,14 @@ a:hover {
     min-height: 600px;
   }
 
+  .fon-top__btn {
+    padding: 20px 40px;
+  }
+
+  .fon-top__btn2 {
+    width: 60px;
+  }
+
   .best {
     padding: 26px 0;
   }
