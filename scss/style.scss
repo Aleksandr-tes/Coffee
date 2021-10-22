@@ -910,6 +910,11 @@ body {
       line-height: 180%;
       text-transform: capitalize;
       border: none;
+      color: $color-2;
+      padding-right: 28px;
+      &:focus {
+         outline: none;
+      }
    }
    button {
       background: $color-3;
